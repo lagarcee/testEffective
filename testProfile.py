@@ -49,7 +49,7 @@ try:
     driver.execute_script("arguments[0].scrollIntoView(true);", lastname)  
     # ожидаем, пока элемент не станет кликабельным
     WebDriverWait(driver, 10).until(EC.element_to_be_clickable(lastname))  
-    # нажимаем на label, представляющий checkbox
+    # нажимаем на элемент
     driver.execute_script("arguments[0].click();", lastname)  
 
     # передаем измененные данные профиля
